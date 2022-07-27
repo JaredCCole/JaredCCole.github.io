@@ -1,18 +1,19 @@
 // toggle mobile menu
-var navLinks = document.getElementById("navLinks");
+const navLinks = document.querySelector('.nav-links');
+const barsBtn = document.querySelector('#barsBtn');
+const closeBtn = document.querySelector('#closeBtn');
 
-function showMenu(){
-    navLinks.style.right = "0";
-}
+barsBtn.addEventListener('click', ()=>{
+    navLinks.style.right = '0';
+})
 
-function hideMenu(){
-    navLinks.style.right = "-35vw";
-}
-
+closeBtn.addEventListener('click', ()=>{
+    navLinks.style.right = '-100vw';
+})
 
 
 // image slider
-const sliderContainer = document.querySelector('.slider-container')
+const sliderContainer = document.querySelector('.slider-container');
 const sliderSlide = document.querySelector('.slider-slide');
 const sliderImages = document.querySelectorAll('.slider-slide img');
 

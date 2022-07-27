@@ -452,9 +452,12 @@ nav .fa{
     }
     .footer{
         grid-template-columns: 1fr;
-        grid-template-rows: 17vh 39vh 27vh;
+        grid-template-rows: 20vh 27vh;
         padding-left: 30px;
         /* grid-template-rows: auto; */
+    }
+    .footer .footer-nav{
+        display: none;
     }
 
     .info-grid{
@@ -470,5 +473,8 @@ nav .fa{
     }
     .location div{
         display: none;
+    }
+    .contact-box{
+        flex-direction: column;
     }
 }
