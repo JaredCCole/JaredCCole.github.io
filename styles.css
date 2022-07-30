@@ -387,13 +387,81 @@ nav .fa{
 .contact-box .hover-btn:hover{
     background: #f8d410;
 }
-
-
-
-
-
-
-
+.album-chooser{
+    padding: 3% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.album-chooser .album{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    width: 340px;
+    height: 250px;
+}
+.album-chooser .album:hover{
+    transform: scale(1.05);
+}
+.album-chooser .album div{
+    background: rgba(248, 212, 16, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.album-chooser .album div h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 40%;
+    transform: translateY(40%);
+    color: white;
+    font-size: 30px;
+}
+.album-chooser .album img{
+    width: 100%;
+    height: 100%;
+}
+.gallery-main{
+    padding-top: 3%;
+}
+.gallery-name{
+    background-color: #f8d410;
+    font-size: 30px;
+}
+.gallery-name h1{
+    position: relative;
+    left: 10%;
+    /* margin-bottom: 3%; */
+}
+.gallery-photos{
+    padding: 3% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+    transform: scale(1);
+}
+.gallery-photos img{
+    object-fit: cover;
+    width: max-content;
+    height: max-content;
+    max-width: 350px;
+    transition: 0.5s ease-in-out;
+    margin: auto;
+}
+.gallery-photos img:hover{
+    transform: scale(1.1);
+}
+.gallery-name h2{
+    background-color: #f8d410;
+    font-size: 30px;
+    position: relative;
+    left: 10%;
+}
 
 
 @media(max-width: 700px){
@@ -454,7 +522,6 @@ nav .fa{
         grid-template-columns: 1fr;
         grid-template-rows: 20vh 27vh;
         padding-left: 30px;
-        /* grid-template-rows: auto; */
     }
     .footer .footer-nav{
         display: none;
@@ -477,4 +544,20 @@ nav .fa{
     .contact-box{
         flex-direction: column;
     }
+    .album-chooser{
+        grid-template-columns: 1fr;
+        padding: 3% 0;
+    }
+    .album-chooser a{
+        margin: auto;
+    }
+    .gallery-photos{
+        padding: 5% 0;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .gallery-photos img{
+        margin: auto;
+    }
+    
 }
