@@ -172,7 +172,7 @@ nav .fa{
 }
 .who-column p{
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -462,6 +462,40 @@ nav .fa{
     position: relative;
     left: 10%;
 }
+.activities{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 3% 0;
+}
+.activities h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.alumni-contact{
+    padding: 0 30% 5%;
+    text-align: center;
+    color: #810000;
+}
+.alumni-contact .hover-btn{
+    top: 30px;
+    border-color: #810000;
+    color: #810000;
+}
+.alumni-contact .hover-btn:hover{
+    color: white;
+    background: #810000;
+}
+
+.alumni-donate{
+    padding: 3% 30%;
+    text-align: center;
+    color: #810000;
+}
+.alumni-donate a{
+    color: #f8d410;
+}
+
 
 
 @media(max-width: 700px){
