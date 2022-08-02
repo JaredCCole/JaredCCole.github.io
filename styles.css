@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     /* border: 1px red solid; */
+    /* font-family: Arial; */
 }
 html, body {
     max-width: 100%;
@@ -76,7 +77,6 @@ body{
     overflow: hidden;
     justify-content: center;
     position: relative;
-    /* border: 10px solid black; */
 }
 .slider-slide{
     display: flex;
@@ -85,15 +85,14 @@ body{
 }
 .slider-slide img{
     max-width: 98.8%;
-    max-height: 100%;
     vertical-align: center;
 }
 #prevBtn{
     position: absolute;
     top: 45%;
     z-index: 2;
-    left: 3%;
-    font-size: 70px;
+    left: 6%;
+    font-size: 80px;
     color: #f8d410;
     cursor: pointer;
     opacity: 0.7;
@@ -102,30 +101,15 @@ body{
     position: absolute;
     top: 45%;
     z-index: 2;
-    right: 3%;
-    font-size: 70px;
+    right: 6%;
+    font-size: 80px;
     color: #f8d410;
     cursor: pointer;
     opacity: 0.7;
 }
-.opener .text-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-.text-box h1{
-    font-size: 62px;
-}
-.text-box h2{
-    margin: 10px 0 40px;
-    font-size: 30px;
-}
 nav .fa{
     display: none;
 }
-
 
 .who{
     width: 80%;
@@ -139,7 +123,12 @@ nav .fa{
     font-size: 36px;
     font-weight: 600;
 }
-
+.who .opener{
+    padding: 3% 15%;
+}
+.who .opener p{
+    font-size: 18px;
+}
 .row{
     margin-top: 20px;
     display: flex;
@@ -209,6 +198,28 @@ nav .fa{
     border-color: rgba(176, 68, 15);
     color: white;
 }
+.rush{
+    padding: 3% 25%;
+    text-align: center;
+}
+.rush h1{
+    font-size: 32px;
+}
+.rush h2{
+    font-size: 20px;
+}
+.rush ul li{
+    list-style: none;
+}
+.rush a{
+    color: #f8d410;
+}
+
+
+
+
+
+
 .footer{
     background-color: #810000;
     color: white;
@@ -309,7 +320,7 @@ nav .fa{
     text-align: left;
 }
 .purpose{
-    padding: 3% 10%;
+    padding: 3% 20%;
     text-align: center;
 }
 .alumni-board{
@@ -326,6 +337,9 @@ nav .fa{
     grid-template-rows: auto;
     column-gap: 30px;
     row-gap: 50px;
+}
+.alumni-board .board-grid div{
+    text-align: center;
 }
 .alumni-board .board-grid a{
     color: #f8d410;
@@ -473,27 +487,39 @@ nav .fa{
     font-weight: 600;
 }
 .alumni-contact{
-    padding: 0 30% 5%;
+    padding: 0 28% 5%;
     text-align: center;
-    color: #810000;
+    /* color: #810000; */
+}
+.alumni-contact h2{
+    font-size: 26px;
+}
+.alumni-contact img{
+    width: 30%;
+}
+.alumni-contact a{
+    color: #f8d410;
 }
 .alumni-contact .hover-btn{
     top: 30px;
-    border-color: #810000;
-    color: #810000;
+    border-color: #f8d410;
+    color: black;
 }
 .alumni-contact .hover-btn:hover{
-    color: white;
-    background: #810000;
+    background: #f8d410;
 }
 
 .alumni-donate{
     padding: 3% 30%;
     text-align: center;
-    color: #810000;
+    /* color: #810000; */
 }
 .alumni-donate a{
     color: #f8d410;
+}
+.fa-phone, .fa-envelope{
+    color: #f8d410;
+    margin-right: 3px;
 }
 
 
@@ -551,6 +577,9 @@ nav .fa{
 
     .learn-more{
         width: 80%;
+    }
+    .rush{
+        padding-inline: 0;
     }
     .footer{
         grid-template-columns: 1fr;
