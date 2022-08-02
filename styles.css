@@ -276,7 +276,7 @@ nav .fa{
 .footer-nav-links ul li a:hover::after{
     width: 100%;
 }
-.footer-icons .fa{
+.footer-icons .fab{
     font-size: 40px;
     margin-right: 25px;
     color: white;
@@ -383,6 +383,12 @@ nav .fa{
 .contact-box div{
     padding-right: 3%;
 }
+.contact-box h1{
+    font-size: 32px;
+}
+.contact-box p{
+    font-size: 18px;
+}
 .contact-box input, .contact-box textarea{
     width: 100%;
     padding: 15px;
@@ -401,6 +407,11 @@ nav .fa{
 .contact-box .hover-btn:hover{
     background: #f8d410;
 }
+.gallery-title{
+    margin-top: 3%;
+    padding-inline: 10%;
+    background-color: #f8d410;
+}
 .album-chooser{
     padding: 3% 10%;
     display: grid;
@@ -416,7 +427,7 @@ nav .fa{
     height: 250px;
 }
 .album-chooser .album:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 .album-chooser .album div{
     background: rgba(248, 212, 16, 0.7);
@@ -457,7 +468,6 @@ nav .fa{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 50px;
-    transform: scale(1);
 }
 .gallery-photos img{
     object-fit: cover;
@@ -489,7 +499,6 @@ nav .fa{
 .alumni-contact{
     padding: 0 28% 5%;
     text-align: center;
-    /* color: #810000; */
 }
 .alumni-contact h2{
     font-size: 26px;
@@ -513,6 +522,10 @@ nav .fa{
     padding: 3% 30%;
     text-align: center;
     /* color: #810000; */
+}
+.alumni-donate .fas{
+    color: #f8d410;
+    font-size: 100px;
 }
 .alumni-donate a{
     color: #f8d410;
@@ -567,7 +580,9 @@ nav .fa{
     .slider-slide img{
         max-width: 100%;
     }
-
+    .who .opener{
+        padding-inline: 0;
+    }
     .row{
         flex-direction: column;
     }
@@ -593,13 +608,16 @@ nav .fa{
     .info-grid{
         grid-template-columns: 1fr;
     }
+    .purpose{
+        padding-inline: 5%;
+    }
     .alumni-board h2{
         font-size: 24px;
     }
     .alumni-board .board-grid{
         grid-template-columns: 1fr;
         row-gap: 15px;
-        font-size: small;
+        font-size: 18px;
     }
     .location div{
         display: none;
@@ -622,5 +640,14 @@ nav .fa{
     .gallery-photos img{
         margin: auto;
     }
-    
+    .alumni-contact{
+        padding: 0 0 5%;
+    }
+    .alumni-contact img{
+        width: 50%;
+    }
+    .alumni-donate{
+        padding-inline: 0;
+        margin-top: 60px;
+    }
 }
