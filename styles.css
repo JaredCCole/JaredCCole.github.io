@@ -667,4 +667,10 @@ nav .fa{
         padding-inline: 0;
         margin-top: 60px;
     }
+    .donate-main div{
+        padding: 3%;
+    }
+    .donate-main img{
+        width: 100%;
+    }
 }
