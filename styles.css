@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     /* border: 1px red solid; */
-    /* font-family: Arial; */
+    font-family: 'Lato', sans-serif;
 }
 html, body {
     max-width: 100%;
@@ -11,9 +11,11 @@ html, body {
 body{
     background-color: #fffdf0;
 }
+b{
+    font-weight: 700;
+}
 .header{
     width: 100%;
-    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/house-background.jpeg"); */
     position: relative;
 }
 .header nav{
@@ -32,12 +34,14 @@ body{
     width: 300px;
 }
 .header nav div h1{
+    font-family: 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
     font-size: 24px;
     margin-bottom: 5px;
 }
 .header nav div h2{
+    font-family: 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
     font-size: 18px;
@@ -203,7 +207,7 @@ nav .fa{
     text-align: center;
 }
 .rush h1{
-    font-size: 32px;
+    font-size: 36px;
 }
 .rush h2{
     font-size: 20px;
@@ -214,11 +218,6 @@ nav .fa{
 .rush a{
     color: #f8d410;
 }
-
-
-
-
-
 
 .footer{
     background-color: #810000;
@@ -301,7 +300,6 @@ nav .fa{
 .info-grid{
     display: grid;
     margin-top: 50px;
-    /* grid-template-columns: 50% 50%; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto; 
     column-gap: 30px;
@@ -395,8 +393,6 @@ nav .fa{
     margin-bottom: 17px;
     box-sizing: border-box;
     border: 2px solid #f8d410;
-    /* background-color: #ddd;
-    border: none; */
 }
 .contact-box .hover-btn{
     border-color: #f8d410;
@@ -408,6 +404,7 @@ nav .fa{
     background: #f8d410;
 }
 .gallery-title{
+    font-size: 45px;
     margin-top: 3%;
     padding-inline: 10%;
     background-color: #f8d410;
@@ -455,12 +452,11 @@ nav .fa{
 }
 .gallery-name{
     background-color: #f8d410;
-    font-size: 30px;
 }
 .gallery-name h1{
+    font-size: 45px;
     position: relative;
     left: 10%;
-    /* margin-bottom: 3%; */
 }
 .gallery-photos{
     padding: 3% 10%;
@@ -535,12 +531,34 @@ nav .fa{
     margin-right: 3px;
 }
 
-
+.donate-main{
+    text-align: center;
+}
+.donate-main div{
+    padding: 3% 25%;
+}
+.donate-main h1{
+    font-size: 36px;
+}
+.donate-main img{
+    width: 75%;
+}
+.donate-main iframe{
+    border: none;
+    height: 875px;
+}
+.donate-main .hover-btn{
+    display: inline-block;
+    border-color: #f8d410;
+    border-radius: 30px;
+    color: black;
+    margin: 25px 0;
+}
+.donate-main .hover-btn:hover{
+    background-color: #f8d410;
+}
 
 @media(max-width: 700px){
-    .text-box h1{
-        font-size: 30px;
-    }
     .nav-links{
         position: absolute;
         background: #810000;
