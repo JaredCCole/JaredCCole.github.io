@@ -118,22 +118,30 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 0px;
     margin-bottom: 3%;
 }
-.who h1{
+.who .opener{
+    padding: 2% 15%;
+    /* background-color: rgb(235, 174, 23, 0.6); */
+    background-color: rgba(248, 212, 16, 0.7);
+    fill-opacity: 0.3;
+}
+.full-bleed{
+    /* box-shadow: 0 0 0 100vmax rgb(235, 174, 23, 0.6); */
+    box-shadow: 0 0 0 100vmax rgba(248, 212, 16, 0.7);
+    clip-path: inset(0 -100vmax);
+}
+.who .opener h1{
     font-size: 36px;
     font-weight: 600;
-}
-.who .opener{
-    padding: 3% 15%;
 }
 .who .opener p{
     font-size: 18px;
 }
 .row{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -202,8 +210,9 @@ nav .fa{
     color: white;
 }
 .rush{
-    padding: 3% 25%;
+    padding: 0 25% 3%;
     text-align: center;
+    /* background-color: #ebae17; */
 }
 .rush h1{
     font-size: 36px;
@@ -211,8 +220,14 @@ nav .fa{
 .rush h2{
     font-size: 20px;
 }
+.rush ul{
+    position: relative;
+    left: 30%;
+}
 .rush ul li{
-    list-style: none;
+    /* list-style: none; */
+    list-style-type: circle;
+    text-align: left;
 }
 .rush a{
     color: #f8d410;
@@ -394,6 +409,7 @@ nav .fa{
     border: 2px solid #f8d410;
 }
 .contact-box .hover-btn{
+    background: white;
     border-color: #f8d410;
     color: black;
     padding: 10px 20px;
@@ -491,8 +507,11 @@ nav .fa{
     font-size: 36px;
     font-weight: 600;
 }
+.activities .row .who-column img{
+    height: 240px;
+}
 .alumni-contact{
-    padding: 0 28% 5%;
+    padding: 0 28% 30px;
     text-align: center;
 }
 .alumni-contact h2{
@@ -516,7 +535,7 @@ nav .fa{
 .alumni-donate{
     padding: 3% 30%;
     text-align: center;
-    /* color: #810000; */
+    /* background-color: #b0440f; */
 }
 .alumni-donate .fas{
     color: #f8d410;
@@ -612,6 +631,9 @@ nav .fa{
     }
     .rush{
         padding-inline: 0;
+    }
+    .rush ul{
+        left: 10%;
     }
     .footer{
         grid-template-columns: 1fr;
