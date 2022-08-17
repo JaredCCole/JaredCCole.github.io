@@ -210,7 +210,7 @@ nav .fa{
     color: white;
 }
 .rush{
-    padding: 0 25% 3%;
+    padding: 0 30% 3%;
     text-align: center;
     /* background-color: #ebae17; */
 }
@@ -628,7 +628,7 @@ nav .fa{
         width: 80%;
     }
     .rush{
-        padding-inline: 0;
+        padding-inline: 1%;
     }
     .rush ul{
         left: 10%;
