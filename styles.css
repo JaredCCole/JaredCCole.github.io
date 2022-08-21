@@ -396,6 +396,7 @@ nav .fa{
 }
 .contact-box div{
     padding-right: 3%;
+    width: 50%;
 }
 .contact-box h1{
     font-size: 32px;
@@ -664,6 +665,9 @@ nav .fa{
     }
     .contact-box{
         flex-direction: column;
+    }
+    .contact-box div{
+        width: 100%;
     }
     .album-chooser{
         grid-template-columns: 1fr;
