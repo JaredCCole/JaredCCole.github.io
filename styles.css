@@ -113,10 +113,10 @@ hr{
     animation-name: fader;
     animation-delay: 2s;
     animation-duration: 1s;
-    z-index: 20;
+    z-index: 4;
   }
 #image-fader img:nth-of-type(2) {
-    z-index: 10;
+    z-index: 3;
 }
 #image-fader img:nth-of-type(n+3) {
     display: none;
