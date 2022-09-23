@@ -73,43 +73,58 @@ b{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.slider-container{
-    padding-top: 3%;
-    width: 65%;
-    margin: auto;
-    overflow: hidden;
-    justify-content: center;
+hr{
+    height: 10px;
+    background-color: #f8d410;
+    color: #f8d410;
+}
+.welcome{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    background: linear-gradient(rgba(129, 0, 0, 0.7), rgba(129, 0, 0, 0.7)), url(images/house-background.jpeg);
+    background-size: cover;
+    height: 81vh;
+}
+.welcome h1{
+    color: white;
     position: relative;
+    left: 8%;
+    width: 50vw;
+    text-align: center;
+    align-self: center;
+    font-size: 50px;
 }
-.slider-slide{
-    display: flex;
-    max-width: 100%;
-    max-height: 500px;
+#image-fader{
+    position: relative;
+    top: 3%;
+    right: 13%;
+    margin: 1em auto;
 }
-.slider-slide img{
-    max-width: 98.8%;
-    vertical-align: center;
-}
-#prevBtn{
+#image-fader img{
+    width: 35vw;
+    height: 35vw;
     position: absolute;
-    top: 45%;
-    z-index: 2;
-    left: 6%;
-    font-size: 80px;
-    color: #f8d410;
-    cursor: pointer;
-    opacity: 0.7;
+    border-radius: 50%;
+    padding: 10px;
+    background: #f8d410;
 }
-#nextBtn{
-    position: absolute;
-    top: 45%;
-    z-index: 2;
-    right: 6%;
-    font-size: 80px;
-    color: #f8d410;
-    cursor: pointer;
-    opacity: 0.7;
+#image-fader img:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+#image-fader img:nth-of-type(2) {
+    z-index: 10;
 }
+#image-fader img:nth-of-type(n+3) {
+    display: none;
+}
+@keyframes fader {
+    from {opacity: 1.0;}
+    to   {opacity: 0.0;}
+}
+
 nav .fa{
     display: none;
 }
@@ -118,7 +133,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-bottom: 0px;
     margin-bottom: 3%;
 }
@@ -611,12 +626,28 @@ nav .fa{
         padding: 30px;
     }
 
-    .slider-container{
-        width: 100%;
-        padding-top: 0;
+    .welcome{
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 0%;
     }
-    .slider-slide img{
-        max-width: 100%;
+    .welcome h1{
+        font-size: 32px;
+        width: 80vw;
+        vertical-align: middle;
+    }
+    #image-fader{
+        align-self: center;
+        vertical-align: middle;
+        right: 38%;
+    }
+    #image-fader img{
+        width: 70vw;
+        height: 70vw;
+        position: absolute;
+        border-radius: 50%;
+        background: #f8d410;
     }
     .who .opener{
         padding-inline: 0;
